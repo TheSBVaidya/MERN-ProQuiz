@@ -1,0 +1,37 @@
+CREATE DATABASE IF NOT EXISTS exam_db; USE exam_db;
+
+CREATE TABLE IF NOT EXISTS user ( id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(255) NOT NULL, email VARCHAR(255) UNIQUE NOT NULL, password
+VARCHAR(255) );
+
+CREATE TABLE IF NOT EXISTS quiz ( id INT PRIMARY KEY, question TEXT, a
+TEXT, b TEXT, c TEXT, d TEXT, correct_answer CHAR(10) );
+
+CREATE TABLE IF NOT EXISTS attempts ( attempt_id INT AUTO_INCREMENT
+PRIMARY KEY, user_id INT NOT NULL, created_at TIMESTAMP DEFAULT
+CURRENT_TIMESTAMP );
+
+CREATE TABLE IF NOT EXISTS attempt_answers ( id INT AUTO_INCREMENT
+PRIMARY KEY, attempt_id INT NOT NULL, quiz_id INT NOT NULL, answer TEXT
+NOT NULL );
+
+INSERT INTO quiz (id, question, a, b, c, d, correct_answer) VALUES 
+
+(11, ‘If ABHIJIT is coded as CEJLLLV the BROTHER is coded as?’, ‘DUQWJTH’, ‘DUQWTSH’, ‘DUQTWSH’, ‘DUQWJHT’, ‘d’), 
+
+(12, ‘K is the brother of Nand X. Y is the mother of N and Z is the father of K. Which of the following is not true?’, ‘K is the son of Z’, ‘Y is the wife of Z’, ‘N is the brother of X’, ‘K is the father of X’, ‘d’), 
+
+(13, ‘Which year will have same calendar that of 2007?’, ‘2008’, ‘2013’, ‘2010’, ‘2018’, ‘d’), 
+
+(14, ‘Worker W produces n units in 5 hours. Workers V and W, workers independently but at the same time, produce n units in 2 hours. How long would it take V alone to produce n units?’, ‘3 Hrs 26 Min’, ‘3 Hrs 20 Min’, ‘3 Hrs 15 Min’, ‘3 Hrs 40 Min’, ‘b’), 
+
+(15, ‘A clock loses 10 sec in every minute is set correct at 2PM on a certain day. Find the time shown by the watch at 8PM next day?’, ‘13:00:00’, ‘14:00:00’, ‘15:00:00’, ‘3.30 PM’, ‘c’), 
+
+(16, ‘At a special sale, 5 tickets can be purchased for the price of 3 tickets. If 5 tickets are purchased at the sale,the amount saved will be what percent of the original price of the 5 tickets?’, ‘0.2’, ‘0.3’, ‘0.4’, ‘0.6’, ‘c’), 
+
+(17, ‘A merchant sells an item at a 20 percent discount, but still makes a gross profit of 20 percent of the cost. What percent of cost would be gross profit on the item have been if it had been sold without the discount?’, ‘0.2’, ‘0.5’, ‘0.4’, ‘0.6’, ‘b’), 
+
+(18, ‘The number of arrangements that can be made with the letters of the word MEADOWS so that the vowels occupy the even places?’, ‘120’, ‘144’, ‘236’, ‘36’, ‘b’),
+ 
+(19, ‘If V = 12R / (r + R),then R =’, ‘Vr / (12 - V)’, ‘Vr + V /12’, ‘Vr ? 12’, ‘V / r ? 12’, ‘a’),
+

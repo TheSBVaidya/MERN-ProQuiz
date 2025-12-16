@@ -9,11 +9,11 @@
 
 ## 📸 Screenshots
 
-|                  **Login & Auth**                   |           **Interactive Dashboard**           |
-| :-------------------------------------------------: | :-------------------------------------------: |
-|       ![Login Page](path/to/login-image.png)        |   ![Dashboard](path/to/dashboard-image.png)   |
-|                 **Focus-Mode Quiz**                 |         **Detailed Result Analysis**          |
-| ![Quiz Interface](path/to/quiz-interface-image.png) | ![Result Page](path/to/result-page-image.png) |
+|                                    **Interactive Dashboard**                                    |                                   **History View**                                    |
+| :---------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
+|     ![Dashboard](https://github.com/TheSBVaidya/MERN-ProQuiz/blob/main/Docs/Dashboard.png)      |  ![History](https://github.com/TheSBVaidya/MERN-ProQuiz/blob/main/Docs/History.png)   |
+|                                       **Focus-Mode Quiz**                                       |                             **Detailed Result Analysis**                              |
+| ![Quiz Interface](https://github.com/TheSBVaidya/MERN-ProQuiz/blob/main/Docs/QuizInterface.png) | ![Result Page](https://github.com/TheSBVaidya/MERN-ProQuiz/blob/main/Docs/Result.png) |
 
 ---
 
